@@ -1,0 +1,24 @@
+{
+	"addresses": [
+	  {
+		"address": "Porschestraße 2c, 38440 Wolfsburg, Germany",
+		"action": "call_chatGPT_api",
+		"parameters": {
+		  "request": "tell me a joke",
+	      "responses": 2
+		}
+	  },
+	  {
+		"address": "",
+		"action": "getShopOffers"
+	  },
+	  {
+		"address": "Another Address",
+		"action": "another_action",
+		"parameters": {
+		  "param1": "value1",
+		  "param2": "value2"
+		}
+	  }
+	]
+  }

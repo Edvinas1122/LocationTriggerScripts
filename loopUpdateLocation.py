@@ -2,12 +2,15 @@ import time
 import pprint
 from modules.apiFunctions import *
 from modules.fileFunctions import *
-from config.config import icloud_email, password, google_api_key, bot_token, channel_id
 from modules.utilFunctions import checkIfUpdatedLocation, addressInAMapOfTriggerActions
 from actions import handleAddressTriggerAction
+#configurations required for running the service
+from config.config import icloud_email, password, google_api_key, bot_token, channel_id
+
+#update file with address
+addressListFileLocation = "config/addressList.json"
 
 text_file_location = "log/address.txt"
-addressListFileLocation = "config/addressList.json"
 
 api = logInto_iCloud(icloud_email, password)
 pprint.pprint(api.devices)
